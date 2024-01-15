@@ -1,0 +1,16 @@
+channels:
+  - defaults
+  - conda-forge
+dependencies: 
+  - numpy
+  - python==3.6 # Torch does not support beyond Python 3.9
+  - pip 
+  - pip:
+    - accelerate
+    - collection==0.1.6
+    - datasets==1.15.1
+    - torch
+    - transformers
+    - transformers[torch]
+    - tqdm
+
